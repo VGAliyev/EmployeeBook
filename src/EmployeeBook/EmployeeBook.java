@@ -202,7 +202,7 @@ public class EmployeeBook {
         Employee[] employeesByDepartment = getEmployeesByDepartment(department);
 
         for (Employee employee : employeesByDepartment) {
-            employee.setSalary(employee.getSalary() + employee.getSalary() * index);
+            employee.setSalary(employee.getSalary() + employee.getSalary() * index / 100.0F);
         }
     }
 
